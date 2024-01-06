@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function MyForm (){
+                document.querySelector("#aye").submit();
+            }
+            
+        </script>
+    </head>
+
+    <body>
+        <form action="enroll" method="post">
+            Student name: <input type="text" name="name"/> <br/>
+            Financial: <input type="radio" value="Government" name="fin"/> Government
+            <input type="radio" value="Grant" name="fin"/> Grant
+            <input type="radio" value="Self-Sponsor" name="fin"/> Self-Sponsor <br/>
+            Level:
+            <select name="cer">               
+                <option value="Master">Master</option>
+                <option value="BsC">BsC</option>
+                <option value="PhD">PhD</option>
+            </select> <br/>
+            DOE: <input name="dob" type="date"/> <br/>
+            <button id="aye" onclick="MyForm()">Save</button>
+        </form>
+    </body>
+</html>
